@@ -1,0 +1,20 @@
+&-btn
+{
+	border: 0;
+	padding: 17px 20px;
+	font-size: 13.5px;
+	letter-spacing: 0.2px;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+	margin-bottom: 0 !important;
+	min-height: auto !important;
+
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+
+	&:hover
+	{
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
+	}
+}

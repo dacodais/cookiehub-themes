@@ -1,0 +1,106 @@
+&-icon
+{
+	position: fixed;
+	bottom: 40px;
+	left: 40px;
+
+	display: none;
+
+	&.ch2-visible
+	{
+		display: block;
+	}
+
+	@media (max-width: 800px)
+	{
+		left: 20px;
+		bottom: 20px;
+	}
+
+	z-index: 60000;
+
+	a
+	{
+		display: block;
+		overflow: hidden;
+		width: 41px;
+		height: 41px;
+		line-height: 41px;
+		text-decoration: none !important;
+
+		font-size: 13.5px;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		white-space: nowrap;
+
+		span
+		{
+			white-space: nowrap;
+			transition: opacity 0.5s ease;
+			opacity: 0;
+		}
+
+		svg
+		{
+			display: block;
+			float: left;
+			width: 23px;
+			height: 23px;
+			border-radius: 100%;
+			padding: 7px;
+			margin-right: 12px;
+
+			transition: all 0.5s ease;
+		}
+
+		&:hover
+		{
+			width: auto;
+
+			span
+			{
+				opacity: 1;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&-right
+	{
+		left: auto;
+		right: 40px;
+
+		@media (max-width: 800px)
+		{
+			right: 20px;
+		}
+
+		a
+		{
+
+			span
+			{
+        margin: 0 0 0 20px;
+
+        transition: initial;
+			}
+
+			svg
+			{
+				margin-right: 0;
+				margin-left: 12px;
+
+				float: right;
+			}
+
+			&:hover
+			{
+				span
+				{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

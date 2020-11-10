@@ -1,0 +1,312 @@
+&-dark
+{
+	.ch2-dialog
+	{
+		background: #333;
+
+		&-content
+		{
+			p
+			{
+				color: #ddd;
+
+				strong
+				{
+					color: #fff;
+				}
+			}
+
+			a
+			{
+				color: #ddd;
+				border-bottom: 1px solid #999;
+
+				&:hover
+				{
+					color: #fff;
+					border-bottom: 1px solid #fff;
+				}
+			}
+		}
+	}
+
+	.ch2-settings
+	{
+		background: #333;
+
+		&-header
+		{
+			color: #fff;
+
+			a
+			{
+				&:before, &:after
+				{
+					border-bottom: 2px solid rgba(#fff, 0.6);
+				}
+
+				&:hover
+				{
+					&:before, &:after
+					{
+						border-bottom: 2px solid rgba(#fff, 1);
+					}
+				}
+      }
+
+      p
+      {
+        color: #fff;
+      }
+		}
+
+		&-content
+		{
+			p
+			{
+				color: #ddd;
+			}
+
+			a
+			{
+				color: #ddd;
+				border-bottom: 1px solid #999;
+
+				&:hover
+				{
+					color: #fff;
+					border-bottom: 1px solid #fff;
+				}
+      }
+
+      .ch2-settings-tab-container > p:last-child
+      {
+        color: #999;
+
+        a
+        {
+          color: #ccc;
+        }
+      }
+		}
+
+    &-actions
+		{
+      background: #333;
+
+      p
+      {
+        color: #999;
+
+        a
+        {
+          color: #ccc;
+        }
+      }
+    }
+
+		&-option
+		{
+			strong
+			{
+				color: #fff;
+			}
+    }
+
+
+    &-scan
+    {
+
+      .ch2-settings
+      {
+        &-tabs
+        {
+          ul
+          {
+            border-bottom: 1px solid rgba(#fff, 0.1);
+
+            li
+            {
+              a
+              {
+                color: #ddd;
+                border-top: 1px solid rgba(#333, 0.1);
+                border-left: 1px solid rgba(#333, 0.1);
+                border-right: 1px solid rgba(#333, 0.1);
+                border-bottom: 1px solid transparent;
+
+                &:hover
+                {
+                  background: rgba(#eee, 0.1);
+                }
+              }
+
+              &.active
+              {
+                a
+                {
+                  border-top: 1px solid rgba(#fff, 0.1);
+                  border-left: 1px solid rgba(#fff, 0.1);
+                  border-right: 1px solid rgba(#fff, 0.1);
+                  border-bottom: 1px solid #333;
+                  background: #333;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-declaration
+    {
+
+      table
+      {
+        color: #ddd;
+        tbody
+        {
+          tr
+          {
+            td
+            {
+			  background: rgba(#eee, 0.1);
+			  border: 0 !important;
+			  color: #eee !important;
+
+              p
+              {
+                background: #333;
+              }
+
+              span
+              {
+                background: #333;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+
+	.ch2-switch
+	{
+		label
+		{
+			background: #999;
+
+			&:before
+			{
+				background: #fff !important;
+				box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+			}
+		}
+
+		input
+		{
+			&:checked
+			{
+				& + label
+				{
+					background: #184382;
+				}
+      }
+
+      &:focus
+      {
+        & + label
+        {
+          outline-style: solid;
+          outline-color: #ccc;
+          outline-offset: 4px;
+          outline-width: thin;
+        }
+      }
+
+      &:disabled
+      {
+        & + label
+        {
+
+
+          &:before
+          {
+              background: #444 !important;
+          }
+        }
+      }
+		}
+	}
+
+	.ch2-btn
+	{
+		&-primary
+		{
+			background: #184382;
+			color: #fff;
+
+			&:hover
+			{
+				background: darken(#184382, 5%);
+				box-shadow: 0px 0px 20px 0px rgba(#184382, 0.4);
+			}
+		}
+
+		&-secondary
+		{
+			background: #fff;
+			color: #333;
+
+			&:hover
+			{
+				background: darken(#fff, 10%);
+			}
+		}
+
+		&-transparent
+		{
+			background: #333;
+			color: #ddd;
+			box-shadow: inherit;
+			border: 1px solid #999;
+
+			&:hover
+			{
+				color: #fff;
+				border: 1px solid #fff;
+
+				box-shadow: inherit;
+			}
+		}
+	}
+
+	&.ch2-icon
+	{
+		a
+		{
+			color: #fff;
+			border-radius: 21px;
+      transition: width 0.3s ease-out;
+
+			svg
+			{
+				border: 2px solid #333;
+				background: #333;
+				fill: #fff;
+			}
+
+			&:hover
+			{
+				background: #333;
+
+				svg
+				{
+					border: 2px solid #000;
+					background: #000;
+				}
+			}
+		}
+	}
+}

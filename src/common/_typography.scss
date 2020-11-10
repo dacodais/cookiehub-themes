@@ -1,0 +1,22 @@
+&-container, &-icon
+{
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: initial;
+
+	*
+	{
+		box-sizing: initial;
+	}
+
+	p
+	{
+		padding: 0;
+	}
+
+	a
+	{
+		transition: all 0.3s ease;
+	}
+}

@@ -1,0 +1,257 @@
+&-light
+{
+	.ch2-dialog
+	{
+		background: #fff;
+
+		&-content
+		{
+			p
+			{
+				color: #707070;
+
+				strong
+				{
+					color: #333;
+				}
+			}
+
+			a
+			{
+				color: #333;
+				border-bottom: 1px solid #999;
+
+				&:hover
+				{
+					color: #000;
+					border-bottom: 1px solid #000;
+				}
+			}
+		}
+	}
+
+	.ch2-settings
+	{
+		background: #fff;
+
+		&-header
+		{
+			color: #333;
+
+			a
+			{
+				&:before, &:after
+				{
+					border-bottom: 2px solid rgba(#333, 0.6);
+				}
+
+				&:hover
+				{
+					&:before, &:after
+					{
+						border-bottom: 2px solid rgba(#333, 1);
+					}
+				}
+      }
+
+      p
+      {
+        color: #333;
+      }
+		}
+
+		&-content
+		{
+			p
+			{
+				color: #707070;
+			}
+
+			a
+			{
+				color: #333;
+				border-bottom: 1px solid #999;
+
+				&:hover
+				{
+					color: #000;
+					border-bottom: 1px solid #000;
+				}
+			}
+    }
+
+    &-actions
+		{
+      background: #fff;
+		}
+
+    &-scan
+    {
+
+      .ch2-settings
+      {
+        &-tabs
+        {
+          ul
+          {
+            border-bottom: 1px solid rgba(#707070, 0.1);
+
+            li
+            {
+              a
+              {
+                color: #707070;
+                border-top: 1px solid rgba(#fff, 0.1);
+                border-left: 1px solid rgba(#fff, 0.1);
+                border-right: 1px solid rgba(#fff, 0.1);
+                border-bottom: 1px solid transparent;
+
+                &:hover
+                {
+                  background: rgba(#eee, 0.2);
+                }
+              }
+
+              &.active
+              {
+                a
+                {
+                  border-top: 1px solid rgba(#707070, 0.1);
+                  border-left: 1px solid rgba(#707070, 0.1);
+                  border-right: 1px solid rgba(#707070, 0.1);
+                  border-bottom: 1px solid #fff;
+                  background: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-declaration
+    {
+
+      table
+      {
+        tbody
+        {
+          tr
+          {
+            td
+            {
+			  background: #eee;
+			  color: #333;
+
+              p
+              {
+                background: #fff;
+              }
+
+              span
+              {
+                background: #999;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+
+	.ch2-switch
+	{
+		label
+		{
+			background: #ccc;
+
+			&:before
+			{
+				background-color: #fff;
+				box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+			}
+		}
+
+		input
+		{
+			&:checked
+			{
+				& + label
+				{
+					background: #184382;
+				}
+			}
+		}
+	}
+
+	.ch2-btn
+	{
+		&-primary
+		{
+			background: #184382;
+			color: #fff;
+
+			&:hover
+			{
+				background: darken(#184382, 5%);
+				box-shadow: 0px 0px 20px 0px rgba(#184382, 0.4);
+			}
+		}
+
+		&-secondary
+		{
+			background: #333;
+			color: #fff;
+
+			&:hover
+			{
+				background: darken(#333, 10%);
+			}
+		}
+
+		&-transparent
+		{
+			background: #fff;
+			color: #333;
+			box-shadow: inherit;
+			border: 1px solid #999;	
+
+			&:hover
+			{
+				color: #000;
+				border: 1px solid #000;
+
+				box-shadow: inherit;
+			}
+		}
+	}
+
+	&.ch2-icon
+	{
+		a
+		{
+			color: #333;
+			border-radius: 21px;
+			transition: width 0s;
+
+			svg
+			{
+				border: 2px solid #333;
+				fill: #333;
+				background: #fff;
+			}
+
+			&:hover
+			{
+				background: #fff;
+
+				svg
+				{
+					border: 2px solid #000;
+					fill: #000;
+				}
+			}
+		}
+	}
+}

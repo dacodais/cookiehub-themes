@@ -1,0 +1,147 @@
+&-settings-declaration
+{
+	p
+	{
+		font-size: 14px;
+    margin: 0 0 5px 0;
+
+    &:first-child
+    {
+      margin-bottom: 4px;
+    }
+
+		strong
+		{
+      font-size: 16px;
+    }
+
+    &.ch2-header
+    {
+      margin-bottom: 5px;
+      margin-top: 30px;
+    }
+  }
+
+  table
+  {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0 0 40px 0;
+    border-spacing: 0;
+
+    @media (max-width: 800px)
+    {
+      thead
+      {
+        display: none;
+      }
+    }
+
+    th, td
+    {
+      text-align: left;
+      padding: 15px 15px 10px 15px;
+    }
+
+    tbody
+    {
+      tr
+      {
+        td
+        {
+          &:last-child
+          {
+            text-align: right;
+          }
+
+          &[colspan]
+          {
+            padding-top: 5px;
+            padding-bottom: 15px;
+            text-align: left;
+          }
+
+          p
+          {
+            margin: 0;
+            padding: 10px 15px;
+          }
+
+          span
+          {
+            border-radius: 4px;
+            padding: 4px 8px;
+            display: inline-block;
+            font-size: 12px;
+            white-space: nowrap;
+          }
+        }
+
+        @media (max-width: 800px)
+        {
+          td[colspan]
+          {
+            padding: 8px 15px 20px 15px;
+          }
+
+          td:not([colspan])
+          {
+            display: block;
+            text-align: left;
+            padding: 8px 20px;
+
+            &:nth-child(1)
+            {
+              &::before
+              {
+                content: 'Name: ';
+                font-weight: bold;
+              }
+            }
+
+            &:nth-child(2)
+            {
+              &::before
+              {
+                content: 'Hostname: ';
+                font-weight: bold;
+              }
+            }
+
+            &:nth-child(3)
+            {
+              &::before
+              {
+                content: 'Path: ';
+                font-weight: bold;
+              }
+            }
+
+            &:nth-child(4)
+            {
+              &::before
+              {
+                content: 'Expiry: ';
+                font-weight: bold;
+              }
+            }
+
+            &:nth-child(5)
+            {
+              display: none;
+            }
+          }
+
+          &:first-child
+          {
+            td
+            {
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

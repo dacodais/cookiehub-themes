@@ -1,0 +1,49 @@
+&-dialog
+{
+	display: none;
+
+	z-index: 70001;
+
+	&-content
+	{
+		p
+		{
+			font-size: 15px;
+			line-height: 24px;
+			margin: 0 0 4px 0;
+
+			strong
+			{
+				font-size: 20px;
+				line-height: 1;
+				font-weight: bold;
+			}
+
+			&:first-child
+			{
+				margin-top: 0;
+				margin-bottom: 12px;
+			}
+		}
+
+		a
+		{
+			text-decoration: none;
+      font-size: 13px;
+
+      &:hover
+      {
+        text-decoration: none !important;
+      }
+		}
+	}
+
+	&-actions
+	{
+    button
+    {
+      white-space: nowrap;
+      height: 13px;
+    }
+	}
+}

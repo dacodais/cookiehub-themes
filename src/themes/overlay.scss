@@ -1,0 +1,183 @@
+&-overlay
+{
+	.ch2-dialog
+	{
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+
+		width: 430px;
+
+		position: fixed;
+
+		padding: 37px 40px;
+
+		@media (max-width: 600px)
+		{
+			width: 70%;
+		}
+
+		&.ch2-visible
+		{
+			display: block;
+			animation: ch2-bubble-left-in 0.4s ease-in;
+		}
+
+		p
+		{
+			margin: 0 0 4px 0;
+
+			&:first-child
+			{
+				margin-bottom: 12px;
+			}
+
+			&:last-child
+			{
+				margin-bottom: 24px;
+			}
+		}
+
+		&-actions
+		{
+			button
+			{
+				width: 160px;
+
+				&:last-child
+				{
+					float: right;
+				}
+
+        height: 13px;
+
+        &.ch2-btn-text-sm
+        {
+          font-size: 11px;
+        }
+
+        &.ch2-btn-text-xs
+        {
+          font-size: 10px;
+		}
+		
+        &.ch2-btn-text-xxs
+        {
+          font-size: 9px;
+        }
+
+				@media (max-width: 600px)
+				{
+					display: block;
+					float: inherit !important;
+					width: calc(100% - 40px);
+
+					&:last-child
+					{
+						margin-top: 10px;
+					}
+				}
+			}
+
+			
+			&-vertical
+			{
+				div
+				{
+					&:last-child
+					{					
+						@media (min-width: 600px)
+						{
+							text-align: center;
+
+							button
+							{
+								padding: 15px 18px;
+								margin-top: 20px;
+								float: none;
+							}
+						}
+
+						@media (max-width: 599px)
+						{
+							button
+							{
+								padding: 14px 19px;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		&.ch2-dialog-center
+		{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+		}
+
+		&.ch2-dialog-topleft
+		{
+			top: 40px;
+			left: 40px;
+
+			@media (max-width: 600px)
+			{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&.ch2-dialog-topright
+		{
+			top: 40px;
+			right: 40px;
+
+			@media (max-width: 600px)
+			{
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&.ch2-dialog-topcenter
+		{
+			top: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&.ch2-dialog-bottomleft
+		{
+			bottom: 40px;
+			left: 40px;
+
+			@media (max-width: 600px)
+			{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&.ch2-dialog-bottomright
+		{
+			bottom: 40px;
+			right: 40px;
+
+			@media (max-width: 600px)
+			{
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		&.ch2-dialog-bottomcenter
+		{
+			bottom: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

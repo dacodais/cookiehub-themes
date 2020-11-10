@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>CookieHub Theme Customerizer</title>
+<style type="text/css">
+body { margin: 0; padding: 0 }
+iframe { width: 100%; height: 100%; margin: 0; padding: 0; border: 0}
+</style>
+</head>
+<body>
+<script src="./index.js"></script>
+<!--<iframe src="https://www.website.com"></iframe>-->
+
+<script type="text/javascript">
+var cpm = {
+    theme: 'ch2-theme-bar',
+    style: 'ch2-style-light',
+    color: '#cf1f25',
+    icon: {
+        style: 'ch2-style-light',
+        position: 'ch2-icon-left'
+    },
+    dialog: {
+        position: 'ch2-dialog-bottom',
+        button: {
+            allowAll: true,
+            denyAll: false,
+            settings: true
+        }
+    }
+
+};
+(function(h,u,b){
+var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+e.async=true;e.src='https://cookiehub.net/dev/c2/242b5d30.js';
+e.onload=function(){u.cookiehub.load(b);}
+d.parentNode.insertBefore(e,d);
+})(document,window,cpm);
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+&-simple
+{
+	.ch2-dialog
+	{
+    	width: 900px;
+		position: fixed;
+
+		&.ch2-visible
+		{
+			display: block;
+		}
+	}
+}
